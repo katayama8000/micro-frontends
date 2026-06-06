@@ -1,0 +1,15 @@
+{
+  "name": "micro-frontends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:remote": "pnpm --filter remote-app build",
+    "preview:remote": "pnpm --filter remote-app preview --port 5001",
+    "dev:host": "pnpm --filter host-app dev --port 5000",
+    "start": "pnpm build:remote && pnpm preview:remote & pnpm dev:host"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
