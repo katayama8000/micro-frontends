@@ -11,6 +11,7 @@ export default defineConfig({
       exposes: {
         './App': './src/App.tsx',
       },
+      dts: false,
       shared: {
         react: {
           singleton: true,
@@ -23,6 +24,15 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    port: 5001,
+    hmr: {
+      port: 5001,
+    },
+  },
+  preview: {
+    port: 5001,
+  },
   build: {
     target: 'esnext',
   },
