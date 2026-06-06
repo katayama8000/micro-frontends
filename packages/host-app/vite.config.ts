@@ -11,7 +11,7 @@ export default defineConfig({
         remoteApp: {
           type: 'module',
           name: 'remote_app',
-          entry: 'http://localhost:5001/assets/remoteEntry.js',
+          entry: 'http://localhost:5001/remoteEntry.js',
         },
       },
       shared: {

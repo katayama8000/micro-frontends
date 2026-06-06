@@ -1,7 +1,6 @@
-import React, { Suspense } from 'react';
-import './App.css';
+import { Suspense, lazy } from 'react';
 
-const RemoteApp = React.lazy(() => import('remote_app/App'));
+const RemoteApp = lazy(() => import('remote_app/App'));
 function App() {
   return (
     <div style={{ padding: '20px', border: '5px solid blue' }}>

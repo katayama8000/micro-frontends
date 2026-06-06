@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project /Users/katayama8000/priv/micro-frontends/packages/remote-app/node_modules/.federation/tsconfig.0fa84109c4b5f1fb13f5a5c667ddb418.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"npx tsc --project /Users/katayama8000/priv/micro-frontends/packages/remote-app/node_modules/.federation/tsconfig.570f9b7250cfca5c9a0ecf1406958b2b.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "npx tsc --project /Users/katayama8000/priv/micro-frontends/packages/remote-app/node_modules/.federation/tsconfig.0fa84109c4b5f1fb13f5a5c667ddb418.json"
+      "cmd": "npx tsc --project /Users/katayama8000/priv/micro-frontends/packages/remote-app/node_modules/.federation/tsconfig.570f9b7250cfca5c9a0ecf1406958b2b.json"
     },
-    "timestamp": 1780757788664
+    "timestamp": 1780758133251
   }
 }
