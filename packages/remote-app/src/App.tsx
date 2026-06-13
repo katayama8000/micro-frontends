@@ -1,7 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { emit, on } from './eventBus';
 
 function App() {
   const [count, setCount] = useState(0);
+
+  // Broadcast every count change so the host (or any other MFE) can react.
+  useEffect(() => {
+    emit('remote:count-changed', { count });
+  }, [count]);
+
+  // Listen for a reset request coming from the host.
+  useEffect(() => {
+    const off = on('host:reset-count', ({ reason }) => {
+      console.log(`[remote] resetting count, reason: ${reason}`);
+      setCount(0);
+    });
+    return off; // unsubscribe on unmount
+  }, []);
 
   return (
     <div
